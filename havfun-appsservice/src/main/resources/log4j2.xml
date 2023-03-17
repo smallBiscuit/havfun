@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+  <Appenders>
+    <RollingRandomAccessFile name="file" fileName="/tmp/havfun-appsservice.log" filePattern="/tmp/hklistco-adminui-%d{yyyy-MM-dd}-%i.log.gz">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+        <Charset>UTF-8</Charset>        
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="200 MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="100" compressionLevel="9" />
+    </RollingRandomAccessFile>
+    <Console name="Console" target="SYSTEM_OUT">
+		<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+	</Console>
+  </Appenders>
+  <Loggers>
+    <Root level="trace">
+      <appender-ref ref="Console" />
+      <AppenderRef ref="file" level="DEBUG"/>
+    </Root>
+  </Loggers>
+</Configuration>

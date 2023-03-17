@@ -1,0 +1,175 @@
+package com.havfun.adminui.order;
+
+import com.havfun.adminui.servlet.AbstractComponentConfig;
+import com.havfun.adminui.webcomponent.WebComponent;
+
+public class OrderComponentConfig extends AbstractComponentConfig {
+
+	public static String ORDER_ID = "order_id";
+	public static String ORDER_INVOICE_NO = "order_invoice_no";
+	public static String ORDER_STORE_ID = "order_store_id";
+	public static String ORDER_STORE_NAME = "order_store_name";
+	public static String ORDER_STORE_URL = "order_store_url";
+	public static String ORDER_CLIENT_ID = "order_client_id";
+	public static String ORDER_CLIENT_GROUP = "order_client_group";
+	public static String ORDER_FIRST_NAME = "order_first_name";
+	public static String ORDER_LAST_NAME = "order_last_name";
+	public static String ORDER_EMAIL = "order_email";
+	public static String ORDER_TELEPHONE = "order_telephone";
+	public static String ORDER_FAX = "order_fax";
+	public static String ORDER_PRODUCT_LIST = "order_product_list";
+	public static String ORDER_BILLING_FIRST_NAME = "order_billing_first_name";
+	public static String ORDER_BILLING_LAST_NAME = "order_billing_last_name";
+	public static String ORDER_BILLING_ADDRESS1 = "order_billing_address1";
+	public static String ORDER_BILLING_ADDRESS2 = "order_billing_address2";
+	public static String ORDER_BILLING_CITY = "order_billing_city";
+	public static String ORDER_BILLING_POSTCODE = "order_billing_postcode";
+	public static String ORDER_BILLING_COUNTRY_ID = "order_billing_country_id";
+	public static String ORDER_BILLING_TELEPHONE = "order_billing_telephone";
+	public static String ORDER_SHIPPING_FIRST_NAME = "order_shipping_first_name";
+	public static String ORDER_SHIPPING_LAST_NAME = "order_shipping_last_name";
+	public static String ORDER_SHIPPING_ADDRESS1 = "order_shipping_address1";
+	public static String ORDER_SHIPPING_ADDRESS2 = "order_shipping_address2";
+	public static String ORDER_SHIPPING_CITY = "order_shipping_city";
+	public static String ORDER_SHIPPING_POSTCODE = "order_shipping_postcode";
+	public static String ORDER_SHIPPING_COUNTRY_ID = "order_shipping_country_id";
+	public static String ORDER_SHIPPING_TELEPHONE = "order_shipping_telephone";	
+	public static String ORDER_PAYMENT_METHOD_ID = "order_payment_method_id";
+	public static String ORDER_SHIPPING_METHOD_ID = "order_shipping_method_id";	
+	public static String ORDER_REMARK = "order_remark";
+	public static String ORDER_TOTAL = "order_total";
+	public static String ORDER_STATUS = "order_status";
+	public static String ORDER_CURRENCY_ID = "order_currency_id";
+	public static String ORDER_CURRENCY_CODE = "order_currency_code";
+	public static String ORDER_CURRENCY_VALUE = "order_currency_value";
+	public static String ORDER_CREATE_TIMESTAMP = "order_create_timestamp";
+	public static String ORDER_LAST_MODIFIED_TIMESTAMP = "order_last_modified_timestamp";
+
+	static {
+
+		createModeMap.put(ORDER_ID, WebComponent.MODE_READONLY);
+		createModeMap.put(ORDER_INVOICE_NO, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_STORE_ID, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_STORE_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_STORE_URL, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_CLIENT_ID, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_CLIENT_GROUP, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_LAST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_EMAIL, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_TELEPHONE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_FAX, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_PRODUCT_LIST, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_LAST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_ADDRESS1, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_ADDRESS2, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_CITY, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_POSTCODE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_COUNTRY_ID, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_BILLING_TELEPHONE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_LAST_NAME, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_ADDRESS1, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_ADDRESS2, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_CITY, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_POSTCODE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_COUNTRY_ID, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_TELEPHONE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_SHIPPING_METHOD_ID, WebComponent.MODE_EDITABLE);		
+		createModeMap.put(ORDER_PAYMENT_METHOD_ID, WebComponent.MODE_EDITABLE);		
+		createModeMap.put(ORDER_CURRENCY_ID, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_CURRENCY_CODE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_CURRENCY_VALUE, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_REMARK, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_TOTAL, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_STATUS, WebComponent.MODE_EDITABLE);
+		createModeMap.put(ORDER_CREATE_TIMESTAMP, WebComponent.MODE_HIDDEN);
+		createModeMap.put(ORDER_LAST_MODIFIED_TIMESTAMP, WebComponent.MODE_HIDDEN);
+		
+		
+		
+		updateModeMap.put(ORDER_ID, WebComponent.MODE_READONLY);
+		updateModeMap.put(ORDER_INVOICE_NO, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_STORE_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_STORE_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_STORE_URL, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CLIENT_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CLIENT_GROUP, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_LAST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_EMAIL, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_TELEPHONE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_FAX, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_PRODUCT_LIST, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_LAST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_ADDRESS1, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_ADDRESS2, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_CITY, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_POSTCODE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_COUNTRY_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_BILLING_TELEPHONE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_FIRST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_LAST_NAME, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_ADDRESS1, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_ADDRESS2, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_CITY, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_POSTCODE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_COUNTRY_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_TELEPHONE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_SHIPPING_METHOD_ID, WebComponent.MODE_EDITABLE);		
+		updateModeMap.put(ORDER_PAYMENT_METHOD_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CURRENCY_ID, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CURRENCY_CODE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CURRENCY_VALUE, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_REMARK, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_TOTAL, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_STATUS, WebComponent.MODE_EDITABLE);
+		updateModeMap.put(ORDER_CREATE_TIMESTAMP, WebComponent.MODE_READONLY);
+		updateModeMap.put(ORDER_LAST_MODIFIED_TIMESTAMP, WebComponent.MODE_READONLY);
+		
+		
+		readOnlyModeMap.put(ORDER_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_INVOICE_NO, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_STORE_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_STORE_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_STORE_URL, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_CLIENT_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_CLIENT_GROUP, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_FIRST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_LAST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_EMAIL, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_TELEPHONE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_FAX, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_PRODUCT_LIST, WebComponent.MODE_EDITABLE);
+		readOnlyModeMap.put(ORDER_BILLING_FIRST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_LAST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_ADDRESS1, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_ADDRESS2, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_CITY, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_POSTCODE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_COUNTRY_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_BILLING_TELEPHONE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_FIRST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_LAST_NAME, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_ADDRESS1, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_ADDRESS2, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_CITY, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_POSTCODE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_COUNTRY_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_SHIPPING_TELEPHONE, WebComponent.MODE_READONLY);		
+		readOnlyModeMap.put(ORDER_SHIPPING_METHOD_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_PAYMENT_METHOD_ID, WebComponent.MODE_READONLY);		
+		readOnlyModeMap.put(ORDER_CURRENCY_ID, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_CURRENCY_CODE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_CURRENCY_VALUE, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_REMARK, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_TOTAL, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_STATUS, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_CREATE_TIMESTAMP, WebComponent.MODE_READONLY);
+		readOnlyModeMap.put(ORDER_LAST_MODIFIED_TIMESTAMP, WebComponent.MODE_READONLY);
+
+	}
+
+}

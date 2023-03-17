@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:util="http://www.springframework.org/schema/util" 
+		xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+			http://www.springframework.org/schema/util 
+			http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+	<bean id="AuthHelper" class="com.havfun.appsservice.helper.AuthHelper">
+		<property name="key" value="12345678ABCDEFGHabcdefgh"/>
+		<property name="publicKeyPath" value="/WEB-INF/classes/public.key"/>
+		<property name="privateKeyPath" value="/WEB-INF/classes/private.key"/>
+		<property name="expireTime" value="18000000"/> <!-- 180000000 = 30 mins -->
+		<property name="regenerationTime" value="180000"/> <!-- 1800000 = 3 mins -->
+	</bean>		
+
+</beans>

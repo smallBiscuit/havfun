@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:util="http://www.springframework.org/schema/util" 
+		xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+			http://www.springframework.org/schema/util 
+			http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+
+    <bean id="BosClient" class="com.havfun.adminui.bos.TestHavfunService">
+	</bean>
+    
+    <bean id="AuthHelper" class="com.havfun.adminui.helper.AuthHelper">
+		<property name="key" value="12345678ABCDEFGHabcdefgh"/>
+		<property name="publicKeyPath" value="/WEB-INF/classes/public.key"/>
+		<property name="privateKeyPath" value="/WEB-INF/classes/private.key"/>
+		<property name="expireTime" value="18000000"/> <!-- 180000000 = 30 mins -->
+		<property name="regenerationTime" value="180000"/> <!-- 1800000 = 3 mins -->
+
+	</bean>		
+
+    
+    <bean id="MenuHelper" class="com.havfun.adminui.menu.MenuHelper">
+		<property name="menuList">
+			<list>
+				<bean id="User" class="com.havfun.adminui.menu.Menu">
+					<property name="key" value="MenuUser"/>
+					<property name="subMenuList">
+						<list>
+							<bean id="SubMenuCreateUser" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateUser"/>
+								<property name="url" value="CreateUser"/>
+							</bean>
+							<bean id="SubMenuSearchUser" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchUser"/>
+								<property name="url" value="SearchUser"/>
+							</bean>
+						</list>
+					</property>
+				</bean>
+				<bean id="Client" class="com.havfun.adminui.menu.Menu">
+					<property name="key" value="MenuClient"/>
+					<property name="subMenuList">
+						<list>
+							<bean id="SubMenuCreateClient" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateClient"/>
+								<property name="url" value="CreateClient"/>
+							</bean>
+							<bean id="SubMenuSearchClient" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchClient"/>
+								<property name="url" value="SearchClient"/>
+							</bean>
+						</list>
+					</property>
+				</bean>
+				<bean id="Product" class="com.havfun.adminui.menu.Menu">
+					<property name="key" value="MenuProduct"/>
+					<property name="subMenuList">
+						<list>
+							<bean id="SubMenuCreateProductGroup" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateProductGroup"/>
+								<property name="url" value="CreateProductGroup"/>
+							</bean>
+							<bean id="SubMenuSearchProductGroup" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchProductGroup"/>
+								<property name="url" value="SearchProductGroup"/>
+							</bean>
+							<bean id="SubMenuCreateProduct" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateProduct"/>
+								<property name="url" value="CreateProduct"/>
+							</bean>						    
+							<bean id="SubMenuEnquireProduct" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchProduct"/>
+								<property name="url" value="SearchProduct"/>
+							</bean>
+						</list>
+					</property>
+				</bean>	
+				<bean id="Material" class="com.havfun.adminui.menu.Menu">
+					<property name="key" value="MenuMaterial"/>
+					<property name="subMenuList">
+						<list>
+							<bean id="SubMenuCreateMaterialGroup" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateMaterialGroup"/>
+								<property name="url" value="CreateMaterialGroup"/>
+							</bean>
+							<bean id="SubMenuSearchMaterialGroup" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchMaterialGroup"/>
+								<property name="url" value="SearchMaterialGroup"/>
+							</bean>
+							<bean id="SubMenuCreateMaterial" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateMaterial"/>
+								<property name="url" value="CreateMaterial"/>
+							</bean>						    
+							<bean id="SubMenuEnquireMaterial" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchMaterial"/>
+								<property name="url" value="SearchMaterial"/>
+							</bean>
+						</list>
+					</property>
+				</bean>				
+				<bean id="Order" class="com.havfun.adminui.menu.Menu">
+					<property name="key" value="MenuOrder"/>
+					<property name="subMenuList">
+						<list>
+							<bean id="SubMenuCreateOrder" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="CreateOrder"/>
+								<property name="url" value="CreateOrder"/>
+							</bean>
+							<bean id="SubMenuSearchOrder" class="com.havfun.adminui.menu.SubMenu">
+								<property name="key" value="SearchOrder"/>
+								<property name="url" value="SearchOrder"/>
+							</bean>
+						</list>
+					</property>
+				</bean>				
+			</list>
+		</property>
+	</bean>
+</beans>

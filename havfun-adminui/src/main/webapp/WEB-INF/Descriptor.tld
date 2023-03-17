@@ -1,0 +1,101 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" version="2.0">
+  <tlib-version>2.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>aristo</short-name>
+<uri>tag lib version id</uri>
+<tag>
+	<name>message</name>
+	<tagclass>com.havfun.adminui.taglib.MessageTagHandler</tagclass>
+	<info>Prepare a message for different language</info>
+	<attribute>
+		<name>message</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>substituteList</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>selectedMenu</name>
+	<tagclass>com.havfun.adminui.taglib.SelectedMenuTagHandler</tagclass>
+	<info>Verify whether the menu is selected and generate the corresponding style</info>
+	<attribute>
+		<name>menu</name> 
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>selectedMenu</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>timeDisplay</name>
+	<tagclass>com.havfun.adminui.taglib.TimeDisplayTagHandler</tagclass>
+	<info>Time display</info>
+	<attribute>
+		<name>time</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>displayUnit</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>webComponent</name>
+	<tagclass>com.havfun.adminui.taglib.WebComponentHandler</tagclass>
+	<info>Generate web component html</info>
+	<attribute>
+		<name>webComponent</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>bundle</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>labelKey</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>pageMode</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>skipLabel</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>choiceList</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>labelList</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>	
+	<attribute>
+		<name>value</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>origValue</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+</taglib> 
